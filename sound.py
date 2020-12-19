@@ -24,3 +24,19 @@ while(True):
     if(i==20) :
         Sound.stop() # 멈추는지 테스트용
         
+#### 아래는 비슷하지만 다른 방법 ####
+#### 이건 파일하나밖에 설정 못함 ####
+def initMusic(file):    # initSound('test2.mp3');
+    pygame.init()       # 음악 재생하기 위해 필요한 요소 초기화
+    pygame.mixer.init() # 음악 재생하기 위해 필요한 요소 초기화
+    pygame.mixer.music.load(file)    # 불러올 mp3 파일 설정
+    pygame.mixer.music.set_volume(0.5)      # 0.0 ~ 1.0 볼륨
+
+def playMusic():
+    if(pygame.mixer.music.get_busy()==False) :  # 효과음이 재생되고있지 않을 경우
+        pygame.mixer.music.play()               # 효과음 재생
+        print("효과음 재생")
+        
+initMusic('test2.mp3')
+playMusic()
+##
