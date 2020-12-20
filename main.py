@@ -18,6 +18,11 @@ import socket
 import pygame
 
 
+# 사용되는 변수들 초기화
+i = 0
+tf=''
+now = datetime.datetime.now().strftime("%d_%H-%M-%S")
+now1 = '000000'
 
 # 마스크 미착용시 효과음 울리기
 pygame.init()       # 음악 재생하기 위해 필요한 요소 초기화
@@ -52,12 +57,6 @@ now_fps = cap.get(cv2.CAP_PROP_FPS) # FPS 값 확인
 print(now_fps)
 cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1080) # 해상도 설정
 cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
-
-# 사용되는 변수들 초기화
-i = 0
-tf=''
-now = datetime.datetime.now().strftime("%d_%H-%M-%S")
-now1 = '000000'
 
 while cap.isOpened(): # 영상 캡쳐 객체 cap이 정상적으로 open되었으면 실행
 
