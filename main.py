@@ -1,4 +1,4 @@
-# 구동하는데 필요한 라이브러리 불러옴 (keras, numpy, cv2, datetime, time, playsound)
+# 구동하는데 필요한 라이브러리 불러옴 (keras, numpy, cv2, datetime, time, serial, socket, pygame)
 
 # 영상처리에 사용되는 라이브러리
 from tensorflow.keras.applications.mobilenet_v2 import preprocess_input
