@@ -144,7 +144,7 @@ while cap.isOpened(): # 영상 캡쳐 객체 cap이 정상적으로 open되었�
 					Sound.play()
 					print("효과음 재생")
 
-				now1 = now[7] + now[9] + now[10]
+				now1 = now[3] + now[4] + now[6] + now[7] + now[9] + now[10]
 				int(now1)
 
 		# result_img에 얼굴영역 부분(ROI)을 bounding box로 나타내기위해 설정
