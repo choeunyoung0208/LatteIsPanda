@@ -40,7 +40,7 @@ client_socket.connect((HOST, PORT))
 # 얼굴인식할 때만 딥러닝 프레임워크를 카페로 씀
 # prototxt : 네트워크 구성을 저장하고 있는 텍스트 파일. network 구조에 대해서 보여주며, 각 레이어별로 파라메타 사이즈 등 상세한 정보가 들어있음 (ref. https://arclab.tistory.com/209)
 # caffemodel : model 파일 확장자. 훈련된 가중치를 저장하고 있는 이진 파일 이름
-facenet = cv2.dnn.readNet('models/deploy.prototxt', 'models/res10_300x300_ssd_iter_140000.caffemodel')
+facenet = cv2.dnn.readNet('models/deploy.prototxt', 'models/res10_300x300_ssd_iter_140000.caffemodel') # 얼굴 검출 모델
 model = load_model('models/mask_detector.model') # 마스크 검출 모델
 
 # 실시간으로 웹캠을 읽기 위해 SBC와 연결된 카메라 장치를 불러옴
